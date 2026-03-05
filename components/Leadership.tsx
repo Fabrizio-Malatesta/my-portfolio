@@ -29,6 +29,16 @@ const items: BentoItem[] = [
     tag: "Competitive Fellowship",
   },
   {
+    title: "Triton Research & Experiential Learning Scholar",
+    subtitle: "TRELS — UC San Diego",
+    period: "Winter 2026",
+    description:
+      "A program empowering students to pursue intellectual opportunities beyond the classroom through funding and mentorship support.",
+    icon: GraduationCap,
+    accent: "#a855f7",
+    tag: "Fellowship",
+  },
+  {
     title: "Finance Chair",
     subtitle: "Undergraduate Bioinformatics Club (UBIC)",
     period: "2025 – 2026",
@@ -50,16 +60,6 @@ const items: BentoItem[] = [
     tag: "Leadership",
   },
   {
-    title: "Student Representative",
-    subtitle: "BICD 100 (Genetics)",
-    period: "Fall 2024",
-    description:
-      "Participated in weekly faculty meetings to represent student feedback and share class-wide updates, bridging communication between students and instructors.",
-    icon: BookOpen,
-    accent: "#10b981",
-    tag: "Advocacy",
-  },
-  {
     title: "Mentor Collective Program",
     subtitle: "UC San Diego",
     period: "2025 – 2026",
@@ -70,14 +70,14 @@ const items: BentoItem[] = [
     tag: "Mentorship",
   },
   {
-    title: "Triton Research & Experiential Learning Scholar",
-    subtitle: "TRELS — UC San Diego",
-    period: "Winter 2026",
+    title: "Student Representative",
+    subtitle: "BICD 100 (Genetics)",
+    period: "Fall 2024",
     description:
-      "A program empowering students to pursue intellectual opportunities beyond the classroom through funding and mentorship support.",
-    icon: GraduationCap,
-    accent: "#a855f7",
-    tag: "Fellowship",
+      "Participated in weekly faculty meetings to represent student feedback and share class-wide updates, bridging communication between students and instructors.",
+    icon: BookOpen,
+    accent: "#10b981",
+    tag: "Advocacy",
   },
 ];
 

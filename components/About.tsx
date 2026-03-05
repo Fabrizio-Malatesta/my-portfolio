@@ -98,7 +98,7 @@ function StatCard({
       variants={fadeUp}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative p-6 sm:p-8 rounded-xl border border-slate-800 bg-slate-900/50 hover:border-cyan-400/40 hover:bg-slate-900/80 transition-all duration-300 group overflow-hidden cursor-default"
+      className="relative p-5 rounded-xl border border-slate-800 bg-slate-900/50 hover:border-cyan-400/40 hover:bg-slate-900/80 transition-all duration-300 group overflow-hidden cursor-default"
     >
       {/* Mouse spotlight */}
       <div
@@ -239,16 +239,37 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Right: stat cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-1 gap-4">
-            {stats.map((stat, i) => (
-              <StatCard
-                key={stat.label}
-                stat={stat}
-                index={i}
-                sectionInView={inView}
+          {/* Right: headshot + stat cards */}
+          <div className="flex flex-col gap-4">
+            {/* Headshot */}
+            <motion.div
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              custom={4}
+              variants={fadeUp}
+              className="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-cyan-400/10 ring-1 ring-white/5"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/headshot.png"
+                alt="Fabrizio Malatesta"
+                className="w-full h-auto object-cover"
               />
-            ))}
+              {/* Subtle vignette */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/30 to-transparent pointer-events-none" />
+            </motion.div>
+
+            {/* Stat cards side by side */}
+            <div className="grid grid-cols-2 gap-4">
+              {stats.map((stat, i) => (
+                <StatCard
+                  key={stat.label}
+                  stat={stat}
+                  index={i}
+                  sectionInView={inView}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

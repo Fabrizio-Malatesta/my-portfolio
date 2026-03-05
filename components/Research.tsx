@@ -59,6 +59,7 @@ const roles: Role[] = [
     ],
     links: [
       { label: "Abstract", href: "/media/mcvicker_project_abstract.pdf" },
+      { label: "SRC 2025 Slides", href: "/media/src_presentation.pdf" },
       { label: "NCRC Poster", href: "/media/ncrc_poster.pdf" },
       { label: "UC LEADS Poster", href: "/media/uc_leads_symposium_poster.pdf" },
     ],
@@ -73,6 +74,9 @@ const roles: Role[] = [
     highlights: [
       "Conducted experiments on arbuscular mycorrhiza symbiosis using PCR, gel electrophoresis, spore inoculation, microscopy analysis, and gene extraction.",
       "Designed an independent peptide treatment study across multiple plant species and presented findings to the lab.",
+    ],
+    links: [
+      { label: "Mueller Lab Presentation", href: "/media/mueller_lab_presentation.pdf" },
     ],
   },
   {

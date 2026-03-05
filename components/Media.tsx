@@ -39,6 +39,21 @@ const items: MediaItem[] = [
     year: "2026",
     href: "/media/uc_leads_symposium_poster.pdf",
   },
+  // Mueller Lab & McVicker Lab — Slide Presentations
+  {
+    type: "Presentation",
+    title: "Mueller Lab Presentation",
+    venue: "Mueller Lab — Salk Institute",
+    year: "2025",
+    href: "/media/mueller_lab_presentation.pdf",
+  },
+  {
+    type: "Presentation",
+    title: "SRC 2025 Presentation",
+    venue: "SRC 2025 @ UCSD",
+    year: "2025",
+    href: "/media/src_presentation.pdf",
+  },
   // Sanchez-Roige Lab — Wisdom GWAS
   {
     type: "Abstract",
@@ -143,9 +158,9 @@ export default function Media() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-4xl font-bold text-white mb-12"
           >
-            Posters &amp;{" "}
+            Posters, Abstracts,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-              Abstracts
+              and More
             </span>
           </motion.h2>
         </div>

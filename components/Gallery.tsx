@@ -240,9 +240,9 @@ export default function Gallery() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-4xl font-bold text-white mb-12"
           >
-            Conferences &amp;{" "}
+            Research{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">
-              Field Work
+              Journey
             </span>
           </motion.h2>
         </div>

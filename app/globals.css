@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #020817;
+  --fg: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #020817;
+}
+::-webkit-scrollbar-thumb {
+  background: #22d3ee55;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee;
+}
+
+/* Glow utilities */
+.glow-cyan {
+  box-shadow: 0 0 20px #22d3ee44, 0 0 40px #22d3ee22;
+}
+.glow-purple {
+  box-shadow: 0 0 20px #a855f744, 0 0 40px #a855f722;
+}
+.text-glow-cyan {
+  text-shadow: 0 0 20px #22d3ee88;
+}
+
+/* Grid line background pattern */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Glassmorphism card utility */
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 211, 238, 0.12);
+}
+
+/* GPU-accelerated transforms for animated elements */
+.will-change-transform {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Slow spin animation for mobile decorative rings */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* On mobile, reduce motion for non-essential animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Mobile: ensure touch targets are at least 44px */
+@media (max-width: 767px) {
+  a, button {
+    min-height: 36px;
+  }
+
+  /* Simplify heavy blur effects on mobile */
+  .backdrop-blur-md {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}

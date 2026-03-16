@@ -60,6 +60,22 @@ const photos: Photo[] = [
     caption: "UC LEADS Symposium 2026 @ UCSF",
     location: "San Francisco, CA",
   },
+  {
+    src: "/gallery/UCLEADS26_groupphoto.jpg",
+    caption: "UC LEADS 2026 Group Photo",
+    location: "San Diego, CA",
+    span: "wide",
+  },
+  {
+    src: "/gallery/UCLEADS26_UCSDphoto1.jpg",
+    caption: "UCSD Group Photo 1",
+    location: "San Diego, CA",
+  },
+  {
+    src: "/gallery/UCLEADS26_UCSDphoto2.jpg",
+    caption: "UCSD Group Photo 2",
+    location: "San Diego, CA",
+  },
 ];
 
 function Lightbox({

@@ -47,7 +47,7 @@ const jsonLd = {
     name: "University of California, San Diego",
   },
   email: "famalatesta@ucsd.edu",
-  sameAs: ["https://www.linkedin.com/in/fabrizio-malatesta-10a1b4341"],
+  sameAs: ["https://www.linkedin.com/in/fabrizio-malatesta"],
   knowsAbout: [
     "Bioinformatics",
     "Computational Genomics",

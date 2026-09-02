@@ -60,14 +60,38 @@ const items: MediaItem[] = [
     title: "Genetic Architecture of Wisdom: A Multi-Variate Genomic Analysis",
     venue: "Sanchez-Roige Lab — UC San Diego",
     year: "2026",
-    href: "",
+    href: "/media/wisdom_abstract.pdf",
+  },
+  {
+    type: "Slides",
+    title: "Genetic Architecture of Wisdom: A Multi-Variate Genomic Analysis",
+    venue: "WCBSURC 2026 @ Sonoma State (Oral, Honorable Mention) · URC 2026 @ UCSD",
+    year: "2026",
+    href: "/media/wcbsurc_presentation.pdf",
   },
   {
     type: "Poster",
     title: "Genetic Architecture of Wisdom: A Multi-Variate Genomic Analysis",
-    venue: "Sanchez-Roige Lab — UC San Diego",
+    venue: "MURALS 2026 @ UCSD · Judd Symposium 2026 @ UCSD",
     year: "2026",
-    href: "",
+    href: "/media/murals_poster.pdf",
+  },
+  // Willsey Lab — Isoform-Aware Variant Annotation
+  {
+    type: "Slides",
+    title:
+      "Isoform-Aware Variant Annotation: Mapping Genetic Variants Across a Gene's Full Transcript Landscape",
+    venue: "SRTP Symposium 2026 @ UCSF (Oral)",
+    year: "2026",
+    href: "/media/srtp_presentation.pdf",
+  },
+  {
+    type: "Poster",
+    title:
+      "Isoform-Aware Variant Annotation: Mapping Genetic Variants Across a Gene's Full Transcript Landscape",
+    venue: "SRTP Symposium 2026 @ UCSF",
+    year: "2026",
+    href: "/media/srtp_poster.pdf",
   },
 ];
 

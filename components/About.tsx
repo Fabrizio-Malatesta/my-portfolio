@@ -13,7 +13,12 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { icon: Award, value: "3.8", label: "GPA", sublabel: "Provost Honors" },
+  {
+    icon: Award,
+    value: "3.8",
+    label: "Cumulative GPA",
+    sublabel: "4.0 Major GPA · Provost Honors",
+  },
   { icon: Calendar, value: "2027", label: "Expected Grad." },
 ];
 

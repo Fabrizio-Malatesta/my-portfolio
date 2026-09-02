@@ -66,7 +66,7 @@ export default function Nav() {
         {/* Desktop right actions */}
         <div className="hidden md:flex items-center gap-2 flex-shrink-0">
           <a
-            href="https://www.linkedin.com/in/fabrizio-malatesta-10a1b4341"
+            href="https://www.linkedin.com/in/fabrizio-malatesta"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-cyan-400/10 transition-all duration-200"
@@ -143,7 +143,7 @@ export default function Nav() {
                   Resume
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/fabrizio-malatesta-10a1b4341"
+                  href="https://www.linkedin.com/in/fabrizio-malatesta"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}

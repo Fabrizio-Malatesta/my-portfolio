@@ -11,17 +11,51 @@ interface Photo {
   span?: "wide";
 }
 
+// WITHHELD — do not add without explicit permission:
+//   SRTP_Oral.jpg    The projected slide in this photo shows unpublished SYNGAP1
+//                    Western blot data. The file stays in public/gallery/ but must
+//                    not be surfaced in the gallery until permission is granted.
 const photos: Photo[] = [
   {
     src: "/gallery/NCRC_1.jpg",
     caption: "NCRC 2026 @ Harvard",
     location: "Cambridge, MA",
-    span: "wide",
   },
   {
     src: "/gallery/NCRC_2.jpg",
     caption: "NCRC 2026 @ Harvard",
     location: "Cambridge, MA",
+  },
+  {
+    src: "/gallery/SRTP_poster.jpg",
+    caption:
+      "Presenting the isoform-aware variant annotation poster at the SRTP Symposium 2026 @ UCSF",
+    location: "San Francisco, CA",
+  },
+  {
+    src: "/gallery/SRTP_UCLEADS.jpg",
+    caption: "With the other UC LEADS scholars in the UCSF SRTP cohort",
+    location: "San Francisco, CA",
+  },
+  {
+    src: "/gallery/NCUR2026_1.jpeg",
+    caption: "Presenting the Superb-seq off-target poster at NCUR 2026",
+    location: "Richmond, VA",
+  },
+  {
+    src: "/gallery/URC2026_1.jpeg",
+    caption: "At the URC 2026 backdrop, UC San Diego",
+    location: "La Jolla, CA",
+  },
+  {
+    src: "/gallery/WCBSURC2026_1.jpeg",
+    caption: "Giving the wisdom GWAS talk at WCBSURC 2026",
+    location: "Rohnert Park, CA",
+  },
+  {
+    src: "/gallery/WCBSURC2026_2.jpeg",
+    caption: "Honorable Mention for oral presentation, WCBSURC 2026",
+    location: "Rohnert Park, CA",
   },
   {
     src: "/gallery/mueller_lab_1.jpg",
@@ -62,19 +96,19 @@ const photos: Photo[] = [
   },
   {
     src: "/gallery/UCLEADS26_groupphoto.jpg",
-    caption: "UC LEADS 2026 Group Photo",
-    location: "San Diego, CA",
+    caption: "UC LEADS Symposium 2026 @ UCSF, all-campus group photo",
+    location: "San Francisco, CA",
     span: "wide",
   },
   {
     src: "/gallery/UCLEADS26_UCSDphoto1.jpg",
-    caption: "UCSD Group Photo 1",
-    location: "San Diego, CA",
+    caption: "UC LEADS Symposium 2026 @ UCSF, UC San Diego cohort",
+    location: "San Francisco, CA",
   },
   {
     src: "/gallery/UCLEADS26_UCSDphoto2.jpg",
-    caption: "UCSD Group Photo 2",
-    location: "San Diego, CA",
+    caption: "UC LEADS Symposium 2026 @ UCSF, UC San Diego cohort, full group",
+    location: "San Francisco, CA",
   },
 ];
 

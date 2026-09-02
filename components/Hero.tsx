@@ -130,7 +130,7 @@ export default function Hero() {
             </a>
             {/* LinkedIn — update href to your profile URL */}
             <a
-              href="https://www.linkedin.com/in/fabrizio-malatesta-10a1b4341"
+              href="https://www.linkedin.com/in/fabrizio-malatesta"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-700 text-slate-400 text-sm font-medium hover:border-cyan-400/40 hover:text-cyan-400 transition-all duration-200 hover:scale-105 active:scale-95"

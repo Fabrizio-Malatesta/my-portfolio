@@ -3,7 +3,16 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
-import { Star, DollarSign, Users, BookOpen, GraduationCap, Heart } from "lucide-react";
+import {
+  Star,
+  DollarSign,
+  Users,
+  BookOpen,
+  GraduationCap,
+  Heart,
+  Sparkles,
+  Newspaper,
+} from "lucide-react";
 
 interface BentoItem {
   title: string;
@@ -22,7 +31,7 @@ const items: BentoItem[] = [
     subtitle: "University of California",
     period: "2025 – 2027",
     description:
-      "Selected as one of a limited number of scholars for this UC-wide research and leadership program. This fellowship supports my Ph.D. pursuits for a TBD number of years within the UC system.",
+      "Selected as one of a limited number of scholars for this UC-wide research and leadership program. Includes a guaranteed Ph.D. fellowship. Serve as a panelist advising prospective transfer students on research.",
     icon: Star,
     accent: "#f59e0b",
     span: "col",
@@ -33,15 +42,15 @@ const items: BentoItem[] = [
     subtitle: "TRELS — UC San Diego",
     period: "Winter 2026",
     description:
-      "A program empowering students to pursue intellectual opportunities beyond the classroom through funding and mentorship support.",
+      "Awarded $1,000 in competitive university funding to support independent undergraduate research.",
     icon: GraduationCap,
     accent: "#a855f7",
     tag: "Fellowship",
   },
   {
-    title: "Finance Chair",
+    title: "Board Member, Outreach and Finance",
     subtitle: "Undergraduate Bioinformatics Club (UBIC)",
-    period: "2025 – 2026",
+    period: "Fall 2025 – Present",
     description:
       "Managed event finances and logistics, directly enabling bioinformatics student body engagement and activities across the department.",
     icon: DollarSign,
@@ -49,15 +58,34 @@ const items: BentoItem[] = [
     tag: "Executive Role",
   },
   {
-    title: "Secretary",
-    subtitle: "Tau Kappa Epsilon — UCSD Chapter",
-    period: "2024 – 2025",
+    title: "Founder",
+    subtitle: "Revelle Undergraduate Research Symposium — UCSD",
+    period: "Spring 2026 – Present",
     description:
-      "Coordinated meetings and events for an 80-member organization. Managed funding logistics and organized philanthropic events raising thousands of dollars for St. Jude Children's Research Hospital.",
-    icon: Users,
+      "Founding Revelle College's first undergraduate research symposium with the endorsement of the Provost's office; recruiting a founding student committee across disciplines.",
+    icon: Sparkles,
     accent: "#a855f7",
-    span: "col",
-    tag: "Leadership",
+    tag: "Founder",
+  },
+  {
+    title: "Board Member — Outreach",
+    subtitle: "The Catalyst — UCSD's Undergraduate Research Journal",
+    period: "Spring 2026 – Present",
+    description:
+      "Connecting undergraduate researchers with publication opportunities and demystifying academic publishing.",
+    icon: Newspaper,
+    accent: "#10b981",
+    tag: "Outreach",
+  },
+  {
+    title: "Board Member — Outreach Committee",
+    subtitle: "Saltman Quarterly",
+    period: "Spring 2026 – Present",
+    description:
+      "Promoting STEM to local K-12 students through interactive classroom experiments and field trips.",
+    icon: Users,
+    accent: "#22d3ee",
+    tag: "Outreach",
   },
   {
     title: "Mentor Collective Program",

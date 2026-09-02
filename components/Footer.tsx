@@ -18,7 +18,7 @@ const socialLinks = [
     icon: Linkedin,
     label: "LinkedIn",
     // Update to your actual LinkedIn profile URL
-    href: "https://www.linkedin.com/in/fabrizio-malatesta-10a1b4341",
+    href: "https://www.linkedin.com/in/fabrizio-malatesta",
   },
   {
     icon: Download,

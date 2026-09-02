@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
-import { FlaskConical, Microscope, Code2, Film, Briefcase, ExternalLink, LinkIcon } from "lucide-react";
+import { FlaskConical, Microscope, Code2, Dna, ExternalLink, LinkIcon } from "lucide-react";
 
 interface RoleLink {
   label: string;
@@ -27,21 +27,46 @@ const roles: Role[] = [
     org: "Sanchez-Roige Lab — UCSD",
     location: "La Jolla, CA",
     period: "Fall 2025 – Present",
-    title: "Research Intern",
+    title: "Undergraduate Researcher",
     icon: Code2,
     accent: "#22d3ee",
     highlights: [
-      "Leading a project analyzing the genetic architecture of wisdom using GWAS and population-level genomic analyses.",
-      "Implementing various tools across different platforms for multi-variate genetic analysis.",
+      "Leading downstream analysis of a GWAS of the SD-WISE-7 wisdom measure (N ≈ 131,870): LDSC genetic correlations across a 39-trait panel, Genomic SEM, and MTAG. First author on the resulting manuscript, in preparation.",
+      "Conducted polygenic score analyses in ~200,000 All of Us participants, and built the lab's Python analysis and visualization stack (Pandas, SciPy, Seaborn) plus its full pipeline documentation.",
+      "Beginning a senior honors thesis extending this pipeline to AUDIT across three ancestries, sex-stratified, covering items 1-3 and AUDIT-P.",
     ],
-    presentations: ["URC 2026 @ UCSD", "MURALS 2026 @ UCSD"],
+    presentations: [
+      "WCBSURC 2026 @ Sonoma State (Oral, Honorable Mention)",
+      "URC 2026 @ UCSD",
+      "MURALS 2026 @ UCSD",
+      "Judd Symposium 2026 @ UCSD",
+    ],
     links: [
-      { label: "Abstract", href: "" },
-      { label: "Poster", href: "" },
+      { label: "Abstract", href: "/media/wisdom_abstract.pdf" },
+      { label: "WCBSURC Slides", href: "/media/wcbsurc_presentation.pdf" },
+      { label: "MURALS Poster", href: "/media/murals_poster.pdf" },
     ],
   },
   {
-    org: "McVicker Lab — Salk Institute",
+    org: "Willsey Lab — UCSF",
+    location: "San Francisco, CA",
+    period: "Summer 2026",
+    title: "Summer Research Trainee",
+    icon: Dna,
+    accent: "#f472b6",
+    highlights: [
+      "Built a gene-agnostic, isoform-aware variant annotation pipeline across the Willsey and Wang Labs that projects UniProt protein domains onto every annotated transcript isoform and places each variant across isoforms with a predicted protein consequence.",
+      "Integrated brain isoform expression from PacBio long-read data (GENCODE v47lift37, GRCh37) and predicted likely protein products of novel brain transcripts.",
+      "Developing the pipeline into an interactive browser for isoform-resolved variant interpretation, replacing single canonical-transcript annotation.",
+    ],
+    presentations: ["SRTP Symposium 2026 @ UCSF (Oral)"],
+    links: [
+      { label: "SRTP Slides", href: "/media/srtp_presentation.pdf" },
+      { label: "SRTP Poster", href: "/media/srtp_poster.pdf" },
+    ],
+  },
+  {
+    org: "McVicker Lab — Salk Institute for Biological Studies",
     location: "La Jolla, CA",
     period: "Summer 2025",
     title: "Research Intern",
@@ -49,7 +74,7 @@ const roles: Role[] = [
     accent: "#a855f7",
     highlights: [
       "Designed and implemented a computational framework in Bash and Python to identify low-frequency off-target genome edits from Superb-seq single-cell sequencing data.",
-      "Aimed to distinguish off-target Cas9-mediated events from spontaneous breaks or technical artifacts.",
+      "Identified 11 ultra-rare off-target mutations on Chromosome 1 discarded by standard detection software, including one validated single-cell editing event, using an adaptive permutation strategy to compute empirical p-values.",
     ],
     presentations: [
       "NCRC 2026 @ Harvard",
@@ -65,15 +90,16 @@ const roles: Role[] = [
     ],
   },
   {
-    org: "Mueller Lab — Salk Institute",
+    org: "Mueller Lab — Salk Institute for Biological Studies",
     location: "La Jolla, CA",
     period: "Fall 2024 – Summer 2025",
-    title: "Lab Tech I",
+    title: "Laboratory Technician I",
     icon: Microscope,
     accent: "#10b981",
     highlights: [
       "Conducted experiments on arbuscular mycorrhiza symbiosis using PCR, gel electrophoresis, spore inoculation, microscopy analysis, and gene extraction.",
       "Designed an independent peptide treatment study across multiple plant species and presented findings to the lab.",
+      "Analyzed and visualized experimental data in R and FIJI/ImageJ.",
     ],
     links: [
       { label: "Mueller Lab Presentation", href: "/media/mueller_lab_presentation.pdf" },
@@ -88,28 +114,6 @@ const roles: Role[] = [
     accent: "#f59e0b",
     highlights: [
       "Conducted experiments on mitochondrial myopathies in mice to test potential therapeutic approaches.",
-    ],
-  },
-  {
-    org: "Mediakite",
-    location: "New York, NY",
-    period: "2019 – 2023",
-    title: "Production Crew Member",
-    icon: Film,
-    accent: "#64748b",
-    highlights: [
-      "Managed tasks at on-location shoots including set construction, camera work, and facilitating clear communication between staff and clients.",
-    ],
-  },
-  {
-    org: "Alliance NY Team — Compass Real Estate",
-    location: "New York, NY",
-    period: "2023",
-    title: "Assistant",
-    icon: Briefcase,
-    accent: "#64748b",
-    highlights: [
-      "Assisted with creating and updating property listings, showings, and effective client communications.",
     ],
   },
 ];

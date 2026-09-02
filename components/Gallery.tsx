@@ -11,10 +11,6 @@ interface Photo {
   span?: "wide";
 }
 
-// WITHHELD — do not add without explicit permission:
-//   SRTP_Oral.jpg    The projected slide in this photo shows unpublished SYNGAP1
-//                    Western blot data. The file stays in public/gallery/ but must
-//                    not be surfaced in the gallery until permission is granted.
 const photos: Photo[] = [
   {
     src: "/gallery/NCRC_1.jpg",
@@ -25,6 +21,12 @@ const photos: Photo[] = [
     src: "/gallery/NCRC_2.jpg",
     caption: "NCRC 2026 @ Harvard",
     location: "Cambridge, MA",
+  },
+  {
+    src: "/gallery/SRTP_Oral.jpg",
+    caption:
+      "Giving the isoform-aware annotation talk at the SRTP Symposium 2026 @ UCSF",
+    location: "San Francisco, CA",
   },
   {
     src: "/gallery/SRTP_poster.jpg",
